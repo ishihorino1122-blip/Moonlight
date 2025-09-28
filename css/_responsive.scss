@@ -103,19 +103,20 @@
       padding-top: 120px;
     }
 
-    .mainvisual  {
-    .main-copy {
-      top: 60%;
+    .mainvisual {
+      .main-copy {
+        top: 60%;
 
-      .main-title {
-        font-size: 40px;
-      }
+        .main-title {
+          font-size: 40px;
+        }
 
-      .btn {
-        font-size: 24px;
+        .btn {
+          font-size: 24px;
+        }
       }
     }
-  }
+
     #consept {
 
       .consept-title {
@@ -165,7 +166,7 @@
 
       dd {
         margin-bottom: 20px;
-       
+
         padding: 0;
         text-align: left;
       }
@@ -174,9 +175,38 @@
 
   footer {
     .sns {
-        img {
-            width: 30px;
+      img {
+        width: 30px;
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  main {
+    .mainvisual {
+      .main-copy {
+        top: 65%;
+
+        .main-title {
+          font-size: 32px;
         }
+
+        .btn {
+          font-size: 24px;
+        }
+      }
+    }
+
+    #consept {
+
+      .consept-title {
+        font-size: 24px;
+      }
+
+      .consept-text {
+        font-size: 16px;
+      }
     }
   }
 }
