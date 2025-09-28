@@ -1,0 +1,182 @@
+@media (max-width: 960px) {
+  header {
+    position: fixed;
+    z-index: 3000;
+    background-color: #0A1A2F;
+  }
+
+  .nav-list {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background: #0A1A2F;
+    transition: left 0.9s ease;
+    z-index: 900;
+    opacity: 0.8
+  }
+
+  .open .nav-list {
+    left: 0;
+  }
+
+  .nav-list ul {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 40px 20px;
+  }
+
+  .nav-list li a {
+    color: #D9A95C;
+    font-size: 20px;
+    text-decoration: none;
+    transition: color 0.6s;
+  }
+
+  .hamburger {
+    display: block;
+    width: 35px;
+    height: 22px;
+    cursor: pointer;
+    z-index: 1000;
+    position: relative;
+    transition: all 0.6s;
+
+    span {
+      display: block;
+      height: 3px;
+      background: #D9A95C;
+      border-radius: 2px;
+      width: 100%;
+      position: absolute;
+      transition: all 0.6s;
+
+      &:nth-child(1) {
+        top: 0;
+      }
+
+      &:nth-child(2) {
+        top: 10px;
+      }
+
+      &:nth-child(3) {
+        top: 20px;
+      }
+    }
+  }
+
+  .open .hamburger span:nth-child(1) {
+    top: 50%;
+    -webkit-transform: rotate(-315deg);
+    transform: rotate(-315deg);
+  }
+
+  .open .hamburger span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .open .hamburger span:nth-child(3) {
+    top: 50%;
+    -webkit-transform: rotate(315deg);
+    transform: rotate(315deg);
+  }
+
+  #mask {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 800;
+    transition: all 0.9s;
+  }
+
+
+  #mask.active {
+    display: block;
+  }
+
+  main {
+
+    .main-img img {
+      padding-top: 120px;
+    }
+
+    .mainvisual  {
+    .main-copy {
+      top: 60%;
+
+      .main-title {
+        font-size: 40px;
+      }
+
+      .btn {
+        font-size: 24px;
+      }
+    }
+  }
+    #consept {
+
+      .consept-title {
+        font-size: 32px;
+      }
+
+      .consept-text {
+        font-size: 24px;
+      }
+    }
+
+    #menu {
+      .menu-content {
+
+        li img {
+          margin: 0 auto;
+        }
+      }
+
+      .menu-price {
+        padding-right: 50px;
+      }
+    }
+  }
+
+  #information {
+
+    .site-logo {
+      width: 40%;
+      margin-right: 0;
+      margin: 0 auto;
+
+    }
+
+    .info-list {
+      flex-direction: column;
+      text-align: center;
+
+      dl {
+        margin: 0 auto;
+      }
+
+      dt {
+        margin-bottom: 20px;
+        padding: 0;
+      }
+
+      dd {
+        margin-bottom: 20px;
+       
+        padding: 0;
+        text-align: left;
+      }
+    }
+  }
+
+  footer {
+    .sns {
+        img {
+            width: 30px;
+        }
+    }
+  }
+}
